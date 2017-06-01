@@ -1,0 +1,23 @@
+{
+  "name": "cnn-server",
+  "version": "0.1.0",
+  "description": "A simple, extendable server for CNN projects.",
+  "license": "Apache-2.0",
+  "private": true,
+  "author": "Matt Crutchfield <matt.crutchfield@turner.com>",
+  "main": "./src/index.js",
+  "dependencies": {
+    "cnn-logger": "1.5.0",
+    "compression": "1.6.2",
+    "express": "4.15.2",
+    "hapi": "16.1.1"
+  },
+  "devDependencies": {
+    "cnn-birdman": "git://github.com/cnnlabs/cnn-birdman.git"
+  },
+  "scripts": {
+    "build": "echo \"command not supported\"",
+    "lint": "cnn-birdman style && cnn-birdman javascript",
+    "test": "echo \"command not supported\""
+  }
+}

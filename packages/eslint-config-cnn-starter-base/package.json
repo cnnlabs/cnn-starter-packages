@@ -1,0 +1,19 @@
+{
+  "name": "eslint-config-cnn-starter-base",
+  "version": "0.1.0",
+  "description": "Consistent basleline coding styles for CNN projects.",
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "peerDependencies": {
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1"
+  },
+  "scripts": {
+    "build": "echo \"command not supported\"",
+    "lint": "echo \"command not supported\"",
+    "test": "echo \"command not supported\""
+  }
+}

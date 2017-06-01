@@ -1,0 +1,8 @@
+/node_modules
+/stats.json
+/*.log
+.DS_Store
+.idea
+*.orig
+packages/*/dist
+packages/*/lib

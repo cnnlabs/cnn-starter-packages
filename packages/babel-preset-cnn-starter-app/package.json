@@ -1,0 +1,28 @@
+{
+  "name": "babel-preset-cnn-starter-app",
+  "version": "0.1.0",
+  "description": "Babel configuration for CNN App projects.",
+  "license": "Apache-2.0",
+  "private": true,
+  "engines": {
+    "node": ">=6"
+  },
+  "author": "Matt Crutchfield <matt.crutchfield@turner.com>",
+  "dependencies": {
+    "babel-plugin-css-modules-transform": "1.2.7",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.24.1",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-react": "6.22.0",
+    "babel-preset-stage-2": "6.22.0",
+    "cnn-birdman": "git://github.com/cnnlabs/cnn-birdman.git"
+  },
+  "peerDependencies": {
+    "react-hot-loader": ">=3.0.0-beta.6"
+  },
+  "scripts": {
+    "build": "echo \"command not supported\"",
+    "clean": "echo \"command not supported\"",
+    "lint": "cnn-birdman style && cnn-birdman javascript",
+    "test": "echo \"command not supported\""
+  }
+}

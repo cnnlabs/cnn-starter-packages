@@ -1,0 +1,36 @@
+{
+  "name": "cnn-starter-packages",
+  "description": "A monorepo for cnn-starter tools",
+  "version": "0.0.1",
+  "author": "Joshua D. Clayton <joshua.clayton@turner.com>",
+  "devDependencies": {
+    "babel-preset-cnn-starter-app": "git://github.com/cnnlabs/babel-preset-cnn-starter-app.git",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint-config-cnn-starter-app": "https://github.com/cnnlabs/eslint-config-cnn-starter-app.git",
+    "eslint-config-cnn-starter-base": "https://github.com/cnnlabs/eslint-config-cnn-starter-base.git",
+    "lerna": "^2.0.0-rc.5",
+    "plop": "^1.8.0",
+    "stylelint": "7.9.0",
+    "stylelint-config-cnn-starter-app": "https://github.com/cnnlabs/stylelint-config-cnn-starter-app.git"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap --loglevel=verbose --hoist",
+    "clean": "lerna clean --yes && lerna run clean",
+    "publish": "lerna publish --yes --cd-version=patch --loglevel=verbose",
+    "publish:canary": "lerna publish --yes --canary --loglevel=verbose",
+    "publish:prerelease": "lerna publish --yes --npm-tag=prerelease --loglevel=verbose",
+    "build": "lerna exec -- npm run build",
+    "build:updated": "lerna exec --only-updated -- npm run build",
+    "lint": "lerna exec -- npm run lint",
+    "lint:updated": "lerna exec --only-updated -- npm run lint",
+    "test": "lerna exec  -- npm run test",
+    "test:updated": "lerna exec  --only-updated -- npm run test",
+    "cm": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

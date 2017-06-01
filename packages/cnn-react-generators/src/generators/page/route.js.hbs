@@ -1,0 +1,9 @@
+ {{!-- DO NOT ALTER THE SPACING IN THIS FILE --}}
+,
+    {
+        path: '{{ path }}',
+        exact: {{#if exactly }}true{{else}}false{{/if}},
+        component: (props) => (
+            <AsyncRoute props={props} loadingPromise={System.import('./pages/{{kebabCase name}}')} />
+        )
+    }$1

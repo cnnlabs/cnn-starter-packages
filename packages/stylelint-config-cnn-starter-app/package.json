@@ -1,0 +1,19 @@
+{
+  "name": "stylelint-config-cnn-starter-app",
+  "version": "0.1.0",
+  "description": "Baseline style linting rules for CNN projects.",
+  "license": "Apache-2.0",
+  "main": "./index.js",
+  "author": "Matt Crutchfield <matt.crutchfield@turner.com>",
+  "dependencies": {
+    "stylelint-order": "0.3.0"
+  },
+  "devDependencies": {
+
+  },
+  "scripts": {
+    "build": "echo \"command not supported\"",
+    "lint": "echo \"command not supported\"",
+    "test": "echo \"command not supported\""
+  }
+}

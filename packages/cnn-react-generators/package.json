@@ -1,0 +1,23 @@
+{
+  "name": "cnn-react-generators",
+  "version": "0.1.0",
+  "description": "Create React components and pages from the command line.",
+  "license": "Apache-2.0",
+  "private": true,
+  "author": "Matt Crutchfield <matt.crutchfield@turner.com>",
+  "bin": {
+    "cnn-react-generators": "./src/index.js"
+  },
+  "dependencies": {
+    "nconf": "0.8.4",
+    "plop": "1.7.4"
+  },
+  "devDependencies": {
+    "cnn-birdman": "git://github.com/cnnlabs/cnn-birdman.git"
+  },
+  "scripts": {
+    "build": "echo \"command not supported\"",
+    "lint": "cnn-birdman style && cnn-birdman javascript",
+    "test": "echo \"command not supported\""
+  }
+}
