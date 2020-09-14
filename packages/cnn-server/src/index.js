@@ -6,7 +6,7 @@ function server(appConfig, escapeHatch = null) {
     require('./check-node-environment.js')();
 
     switch (config.framework) {
-        case 'hapi':
+        case '@hapi/hapi':
             require('./hapi.js')(config, escapeHatch);
             break;
         case 'express':

@@ -29,7 +29,7 @@ function send(handler, response) {
     (handler && handler.send) ? handler.send(response) : handler(response);
 }
 
-const frameworks = ['hapi', 'express'];
+const frameworks = ['@hapi/hapi', 'express'];
 
 for (let port = 5000; port < 5005; port++) {
     const framework = frameworks[Math.floor(Math.random() * frameworks.length)];

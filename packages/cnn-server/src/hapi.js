@@ -21,7 +21,7 @@ function registerRoutes(app, { routes : r }, callback) {
 
 function server(config, escapeHatch = null) {
 
-    const Hapi = require('hapi');
+    const Hapi = require('@hapi/hapi');
     const app = new Hapi.Server();
 
     app.connection({ port: config.port, host: config.hostname });
